@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/f781b294e9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+  <header>
         <nav>
             <a class="logo" href="/">DEV AGNES</a>
             <div class="mobile-menu">
@@ -19,11 +19,11 @@
               <div class="line3"></div>
             </div>
             <ul class="nav-list">
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Experiência</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#habilidade">Habilidade</a></li>
+              <li><a href="#projeto">Projeto</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
             <div class="btn-dark">
               <input type="checkbox" name="change-theme" id="change-theme">
@@ -33,19 +33,82 @@
               </label>
           </div>
           </nav>
-    </header>
+</header>
+<main>
+<main class="background">
+    <div class="conteudo">
     <main>
-      <section class="inicio">
+      <section class="sobre" >
         <img src="./image/bds 1.png" alt="minha imagem">
-        <h1>Olá, sou o Agnes Barbosa </h1>
-        <h2>Front-end Developer</h2>
+        <h1 id="sobre">Sobre</h1>
+        <h2>Olá, sou o Agnes Barbosa! <br> Front-end Developer.</h2>
         <p> Estudante de <em>Análise e desenvolvimento de Sistemas</em>, focado em desenvolvimento web <br> e apaixonado
         por esporte em especial a musculação.</p>
       </section>
-      
-
     </main>
-    
-    <script src="script.js"></script>
+    <main>
+      <section class="habilidade">
+          <h3 class="titulo" id="habilidade">habilidades</h3>
+          
+              <p class="fonte">
+                <img src="./image/HTML5.png" alt="Logo html5">
+              <label for="progess-bar-1"> Html</label>
+              <progress id="progess-bar-1" value="9" max="10"></progress>
+              </p>
+              <p class="fonte">
+                <img src="./image/css3.webp" alt="Logo html5">
+              <label for="progess-bar-1">Css</label>
+                  <progress id="progess-bar-1" value="8" max="10"></progress>
+              </p>
+              <p class="fonte">
+                <img src="./image/javascript.webp" alt="Logo html5">
+              <label for="progess-bar-1">Javascript</label>
+              <progress id="progess-bar-1" value="6" max="10"></progress>
+              </p>
+              <p class="fonte">
+                <img src="./image/bootstrap.webp" alt="Logo html5">
+                <label for="progess-bar-1">Bootstrap</label>
+                <progress id="progess-bar-1" value="6" max="10"></progress>
+              </p>
+              <p class="fonte">
+                <img src="./image/react.png" alt="Logo html5">
+                <label for="progess-bar-1">Reactjs</label>
+                <progress id="progess-bar-1" value="5" max="10"></progress>
+              </p>
+              <p class="fonte">
+                <img src="./image/python.webp" alt="Logo html5">
+                <label for="progess-bar-1">Python</label>
+                <progress id="progess-bar-1" value="7" max="10"></progress>
+              </p>
+              <p class="fonte">
+                <img src="./image/uiux.png" alt="Logo html5">
+              <label for="progess-bar-1">Ui e Ux design</label>
+              <progress id="progess-bar-1" value="6" max="10"></progress>
+              </p>
+      </section>
+    </main>
+    <main>
+      <section class="projetos">
+      <h4 class="titulo" id="projeto"> Projetos</h4>
+      <p class="fonte-media"> Projeto pessoal feito só com html e css.</p>
+      </section>
+    </main>
+    <main>
+      <section class="contatos">
+        <h3 class="titulo" id="contato">contatos</h3>
+        <UL>
+          []
+            <LI class="fonte-media"> <i class="fa-solid fa-phone">  TEL: (74) 98813-3328</i></LI>
+            <LI class="fonte-media"> <i class="fa-brands fa-whatsapp-square"> TEL: (74) 98813-3328</i> </LI>
+            <LI class="fonte-media"> <i class="fa-solid fa-envelope">  E-MAIL:bdsagnes@gmail.com</i></LI>
+        </UL>
+    </div>
+      </section>
+</main>
+
+  </main>
+  </div>
+</main>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -40,10 +40,12 @@
   }
 }
 
-.header{
-    position: fixed;
-    width: 100%;
-    background: #00d9ffc5;
+header{
+  position: fixed;
+  width: 100%;
+  background-attachment: fixed;
+  top: 0%;
+  
 }
 * {
     margin: 0;
@@ -73,11 +75,6 @@
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
     background: #23232e;
     height: 8vh;
-  }
-  
-  main {
-    background-size: cover;
-    height: 92vh;
   }
   
   .nav-list {
@@ -173,8 +170,10 @@
 
   .dark,
 .dark header{
-    background-color: #263238;
+    background-color:#263238;
     color: #fff;
+    
+
 }
 
 .dark .bi-sun {
@@ -208,19 +207,124 @@
     background-color: #67b4f3;
 }
 
+
 /* main */
-.inicio{
+
+main {
+  background-size: cover;
+  height: 92vh;
+  display: table;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-transition: transform cubic-bezier(0, 0, 0.21, 1);
+  transition: transform 0.45 cubic-bezier(0, 0, 0.21, 1);
+  
+}
+
+/*.conteudo{
+  width: 74%;
+  background-color: white;
+  padding: 50px;
+  margin: 120px auto;
+  border-radius: 10px;
+  line-height: 3rem;
+}*/
+.sobre{
   font-size: 2rem;
   width: 100%;
 }
 h1{
-  margin-top: 3rem;
-}
-h1, h2{
   font-size: 3rem;
-  
+  margin-top: 70px;
 }
+
+h2{
+  font-size: 2rem;
+  font-family: monospace;
+  margin-top: 2rem;
+}
+
 img{
-  width: 250px;
+  width: 350px;
   float: left;
+  bottom: 30px;
+  margin-top: 2rem;
 }
+
+/* titulo h3*/
+.titulo{
+  font-size: 2rem;
+  margin: 20px 20px 20px 20px;
+  width: 22ch;
+  animation: typing 2s steps(22),
+  blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden; 
+  /* border-right: 3px solid; */
+  font-family: monospace;
+
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* habilidade */
+.habilidade{
+  margin-left: 20px;
+}
+.habilidade img {
+  width: 30px;
+  margin: 20px;
+
+
+}
+.habilidade label{
+  width: 280px;
+  display: inline-block;
+  ;
+
+}
+.habilidade progress{
+  accent-color: #2e2d4c;
+}
+.fonte{
+  font-size: 1.5rem;
+  display:flex
+}
+.fonte label, progress{
+  margin-top: 20px;
+
+}
+
+
+
+
+
+/* Projetos */
+
+.projeto{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.projeto > p{
+  scroll-snap-align: start;
+}
+.projeto p {
+  border-radius: 10px;
+  width: 540px;
+  object-fit: contain;
+}
+/*.habilidade::-webkit-scrollbar {
+  display: none;
+}*/
