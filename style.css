@@ -229,8 +229,10 @@ body{
   background-color: #fff;
   padding: 50px;
   margin: 120px auto ;
+  margin-bottom: -100px;
   border-radius: 10px;
   line-height: 3rem;
+  padding-bottom: 100vh;
 }
 .conteudo section {
   background-size: cover;
@@ -265,7 +267,6 @@ a [id="contato"] :target  #contato{
 .sobre{
   margin: 20px;
   font-size: 1rem;
-  height: 100vh;
   font-family:sans-serif;
   justify-items: center;
   text-justify: auto;
@@ -308,7 +309,6 @@ h1, h2{
 .habilidade{
   margin-top: 20px;
   font-size: 2rem;
-  height: 100vh;
   font-family:sans-serif;
   justify-items: center;
   text-justify: auto;
@@ -340,7 +340,6 @@ h1, h2{
   margin: 20px;
   font-family:sans-serif;
   font-size: 1rem;
-  height: 100vh;
   font-family:sans-serif;
   justify-items: center;
   text-justify: auto;
@@ -377,7 +376,6 @@ h1, h2{
 .contatos{
   margin: 20px;
   font-size: 1rem;
-  height: 100vh;
   font-family:sans-serif;
   justify-items: center;
   text-justify: auto;
@@ -394,4 +392,96 @@ h1, h2{
   text-align:start;
   padding: 15px;
   font-size: 1rem;
+}
+
+/* RODAPÉ */ 
+.rodape {
+  position: relative;
+  padding: 200px;
+  background-color: #1e1d33;
+  margin-top: 100px;
+  
+  
+}
+.rodape-stl {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  color: rgba(255, 255, 255, .1);
+  background: linear-gradient(to right,
+  rgb(76, 217, 105),
+  rgb(52, 170, 220),
+  rgb(88, 86, 217),
+  rgb(255, 45, 83),
+  rgb(255, 45, 83),
+  rgb(88, 86, 217),
+  rgb(52, 170, 220),
+  rgb(76, 217, 105)
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1em;
+  animation: sTransition 10s linear infinite;
+}
+@keyframes sTransition {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.btns-social {
+  column-gap: 25px;
+  background-color: transparent;
+  border: transparent;
+}
+.icon {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outine-offset, outline-color, background-color;
+  transition-duration: .25s;
+}
+.icon:hover {
+  outline-offset: 4px;
+}
+.icon:hover {
+  animation: shake .25s;
+}
+
+.icon-face:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+.icon-insta:hover {
+  background-image: radial-gradient(circle at 30% 107%,
+  #fdf497 0%, #fdf497 5%,
+  #fd5949 45%, #d6249f 60%,
+  #285aeb 90%);
+  outline-color: #a02d76;
+}
+.icon-git:hover {
+  background-color: #2EA44F;
+  outline-color: #2EA44F;
+}
+.icon-like:hover {
+  background-color: #0077b5;
+  outline-color: #0077b5;
+}
+@keyframes shake {
+  10%{transform:  rotate(15deg);}
+  20%{transform:  rotate(-15deg);}
+  30%{transform:  rotate(15deg);}
+  40%{transform:  rotate(-15deg);}
 }
