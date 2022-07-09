@@ -485,3 +485,42 @@ h1, h2{
   30%{transform:  rotate(15deg);}
   40%{transform:  rotate(-15deg);}
 }
+
+/* botão inicio */
+.btn-inicio{
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  margin: 10px;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.3;
+  outline: 2px solid #fff;
+  transition-property: outine-offset, outline-color, background-color;
+  transition-duration: .25s;
+}
+.btn-inicio:hover {
+  background-image: radial-gradient(circle at 30% 107%,
+  #fdf497 0%, #fdf497 5%,
+  #fd5949 45%, #d6249f 60%,
+  #285aeb 90%);
+  outline-color: #a02d76;
+}
+@keyframes shake {
+  10%{transform:  rotate(15deg);}
+  20%{transform:  rotate(-15deg);}
+  30%{transform:  rotate(15deg);}
+  40%{transform:  rotate(-15deg);}
+}
+.btn-inicio:hover{
+  outline-offset: 4px;
+}
+
+.btn-inicio:hover{
+  opacity: 1;
+  animation: shake .25s;
+}
