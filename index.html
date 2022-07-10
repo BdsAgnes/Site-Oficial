@@ -40,7 +40,7 @@
         <div class="scroll">
         <img src="./image/bds 1.png" alt="minha imagem">
         <h1>Olá, sou o Agnes Barbosa!</h1>
-        <h2> Front-end Developer.</h2>
+        <h2> Desenvolvedor Front-end .</h2>
         <p> Estudante de <em>Análise e desenvolvimento de Sistemas</em>, focado em desenvolvimento web <br> e apaixonado
         por esporte em especial a musculação.</p>
         </div>
@@ -119,12 +119,24 @@
     <section class="contatos" id="contato">
       <div class="scroll">
         <h3 class="titulo" >contatos</h3>
-        <UL>
-          
-            <LI class="fonte-media"> <i class="fa-solid fa-phone">  TEL: (74) 98813-3328</i></LI>
-            <LI class="fonte-media"> <i class="fa-brands fa-whatsapp-square"> TEL: (74) 98813-3328</i> </LI>
-            <LI class="fonte-media"> <i class="fa-solid fa-envelope"> E-MAIL: bdsagnes@gmail.com</i></LI>
-        </UL>
+        <ul>
+            <li class="fonte-media"> <a href="https://bit.ly/AgnesBarbosa" target="_blank" rel="external"> <i class="bi bi-whatsapp"></i> </a> </li>
+            <li class="fonte-media"> <a href="https://t.me/AgnesBarbosa" target="_blank" rel="external"><i class="bi bi-telegram"></i></a> </li>
+            <li class="fonte-media"> <i class="bi bi-envelope"></i> 
+            <form action="https://formsubmit.co/bdsagnes@gmail.com" method="POST"
+            target="_blank" rel="external" class="form">
+              <label for="name">Nome</label>
+              <input type="text" name="name" required>
+              <label for="email">E-mail</label>
+              <input type="email" name="email" required>
+              <label for="message">Mensagem</label>
+              <textarea name="message" placeholder="ESCREVA AQUI" required></textarea>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
+              <button type="submit">Enviar</button>
+            </form>
+          </li>
+        </ul>
+        </div>
         </div>
         </div>
       </section>
