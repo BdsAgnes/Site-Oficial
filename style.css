@@ -620,7 +620,8 @@ section .dld{
   animation: shake .25s;
 }
 
-.icon-face:hover {
+.icon-face:hover,
+.icon-ttt:hover{
   background-color: #1da1f2;
   outline-color: #1da1f2;
 }
