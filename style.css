@@ -278,7 +278,27 @@ h1, h2{
 }
 h1{
   padding-top: 50px;
+  font-size: 1.9rem;
+  margin-top: 50px;
+  width: 26ch;
+  animation: typing 5s steps(26) infinite normal,
+  blink .2s step-end ;
+  white-space: nowrap;
+  overflow:hidden;
+  border-right: 3px ;
+  font-family: monospace;
 }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink{
+  100% {
+    border-color: transparent;
+  }
+}
+
 
 .sobre img{
   width: 350px;
@@ -292,9 +312,9 @@ h1{
 .titulo{
   font-size: 1.9rem;
   margin-top: 50px;
-  width: 22ch;
-  animation: typing 5s steps(22),
-  blink .2s step-end infinite alternate;
+  width: 16ch;
+  animation: typing 5s steps(16) infinite normal,
+  blink .2s step-end  ;
   white-space: nowrap;
   overflow:hidden;
   border-right: 3px ;
@@ -305,7 +325,7 @@ h1{
     width: 0;
   }
 }
-@keyframes blink {
+@keyframes blink{
   100% {
     border-color: transparent;
   }
