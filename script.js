@@ -1,3 +1,4 @@
+// BARRA DE MENU
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -46,13 +47,13 @@ class MobileNavbar {
   const changeThemeBtn = document.querySelector("#change-theme");
 toggleDarkMode();
 
-// toggle dark mode
+// ALTERNAR O MODO ESCURO
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
 
 }
 
-//  load light or dark mode
+//  CARREGAR O MODO CLARO OU ESCURO
 function loadTheme() {
     const darkMode = localStorage.getitem("dark")
 
@@ -64,7 +65,7 @@ function loadTheme() {
 changeThemeBtn.addEventListener("change", function() {
     toggleDarkMode();
 
-    //save or remove dark mode
+    //SALVAR OU REMOVER O MODO ESCURO
         localStorage.removeItem("dark");
 
         if(document.body.classList.contains("dark")) {
