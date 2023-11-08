@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none; 
+    list-style: none;
 }
 /* ¨¨¨¨navbar¨¨¨¨inicio */
 
@@ -215,6 +216,15 @@ header{
 .dark .description {
     color: #2196f3;
 }
+.interface{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+.scroll{
+  scroll-snap-align: start;
+  position: sticky;
+}
 
 
 /* MAIN STYLE*/
@@ -236,91 +246,46 @@ body{
   margin-bottom: -100px;
   border-radius: 10px;
   line-height: 3rem;
-  /* padding-bottom: 100vh; */
+  
 }
 .conteudo section {
   background-size: cover;
   width: 100%;
   height: 100%;
   padding: 50px;
-  display: table;
+  
   z-index: 0;
-  -webkit-transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
-  transition: transform 0.45s cubic-bezier(0, 0, 0.21, 1);
-  vertical-align:middle;
   }
 
 /* sobre */
 
 .sobre{
-  width: 100%;
-  height: 100%;
-  margin-right: 20px;
-  padding: 10px;
+  width: 100vh;
+  height: 100vh;
+  margin-right:10px;
   font-size: 1.5rem;
   font-family:sans-serif;
   justify-items: center;
-  text-justify: auto;
-}
-h1, h2{
-  white-space:inherit;
-  font-size: 2rem;
-  font-family: monospace;
+
 }
 h1{
-  padding-top: 50px;
-  font-size: 1.9rem;
-  margin-top: 50px;
-  width: 28ch;
-  animation: typing 5s steps(28) infinite normal,
-  blink .3s step-end ;
-  white-space: nowrap;
-  overflow:hidden;
-  border-right: 3px ;
-  font-family: monospace;
+  font-size: 2rem;
+  font-family:sans-serif;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink{
-  100% {
-    border-color: transparent;
-  }
-}
-
 
 .sobre img{
-  width: 350px;
+  width: 400px;
   height: 100%;
   float: left;
-  margin-right: 10px;
-  margin-left: -80px;
+  margin-left:-70px;
+  margin-top: -80px;
 }
 
 /* TITULO H3 STYLE*/
 .titulo{
   font-size: 1.9rem;
-  margin-top: 50px;
-  width: 16ch;
-  animation: typing 5s steps(16) infinite normal,
-  blink .2s step-end  ;
-  white-space: nowrap;
-  overflow:hidden;
-  border-right: 3px ;
-  font-family: monospace;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-@keyframes blink{
-  100% {
-    border-color: transparent;
-  }
-}
+
 /* HABILIDADE STYLE */
 
 .habilidade{
@@ -562,12 +527,12 @@ section .dld{
 }
 
 /* RODAPÉ */ 
-.rodape {
+.msl {
   margin: auto;
   padding-top:  4rem;
   background-color:transparent;
-  margin-top: -100px;
-  background-attachment: fixed;
+  margin-top: 5px;
+
 }
 .rodape-stl {
   text-align: center;
@@ -599,9 +564,9 @@ section .dld{
   }
 }
 .rodape-stl p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   margin: 5px;
-  font-family: sans-serif;
+  font-family:monospace;
 }
 
 .btns-social {
